@@ -33,6 +33,7 @@ namespace SuperCircle.Controllers
                     FullName = dto.Name,
                     IsActive = true,
                 };
+                //
                 _context.UserLogins.Add(user);
                 await _context.SaveChangesAsync();
                 return Ok();
